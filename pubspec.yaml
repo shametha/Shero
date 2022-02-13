@@ -34,6 +34,8 @@ dependencies:
   sqflite: ^2.0.1
   flutter_local_notifications: ^9.2.0
   path_provider: ^2.0.4
+  tflite: ^1.1.2
+  image_picker: ^0.8.3+2
 
 dev_dependencies:
   flutter_test:

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:lass/Widgets/Notification.dart';
+import 'package:lass/screens/Diva%20Dude/HomeScreen.dart';
 import 'package:lass/screens/Journal/JournalHome.dart';
 import 'package:lass/screens/notify.dart';
 
@@ -54,7 +55,12 @@ class HomeScreen extends StatelessWidget {
               ElevatedButton(
                 child: Text("            Diva Dude            ",
                 style: TextStyle(fontSize: 19),),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DDHomeScreen()));
+                },
                 style: ElevatedButton.styleFrom(
                   primary: Colors.purple[900],
                   padding: EdgeInsets.symmetric(horizontal: 40),

@@ -2,6 +2,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:lass/Widgets/Journal.dart';
 import 'package:lass/screens/Journal/JournalTemplateCollection.dart';
+import 'package:lass/screens/JournalIndividualEntry.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class JournalHome extends StatefulWidget {
@@ -100,7 +101,7 @@ class _JournalHomeState extends State<JournalHome>
             widget.rootContext,
             PageRouteBuilder(
               transitionDuration: Duration(milliseconds: 500),
-              pageBuilder: (_, __, ___) => JournalTemplateHome(),
+              pageBuilder: (_, __, ___) => IndividualEntry(),
             ));
       },
       child: Container(
